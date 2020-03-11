@@ -86,7 +86,7 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{ hugo.Generator }}
+    <!-- {{ hugo.Generator }} -->
   </head>
 
   {{ $csClass := "colorscheme-light" }}

@@ -7,13 +7,13 @@
       {{ with .Site.Params.since }}
         © {{ if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year }}
       {{ else }}
-        © {{ now.Year }}
+        © 2010 - {{ now.Year }}
       {{ end }}
       {{ if .Site.Params.Author }} {{ .Site.Params.Author }} {{ end }}
     {{ end }}
     {{ if not .Site.Params.hideCredits }}
       {{ if not .Site.Params.hideCopyright }} · {{ end }}
-      {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      {{ i18n "powered_by" }} <a href="https://gohugo.io/" target="_blank" rel="nofollow">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="nofollow">Coder</a>.
     {{ end }}
     {{ if .Site.Params.commit }}
       {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}
